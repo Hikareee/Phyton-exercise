@@ -18,7 +18,7 @@ while True:
  if max >= temp >= min:
      break
  else:
-     print ("Temperature must be between -58F and 41F.")
+     print ("Temperature must be between -58F and 41F. Please re-enter the temperature: ")
      continue
      
 #Input Wind speed
@@ -27,7 +27,7 @@ while True:
   if wind >= 2:
       break
   else: 
-      print ("Speed must be greater than or equal to ")
+      print ("Speed must be greater than or equal to 2. Please re-enter the wind speed: ")
       continue
       
   

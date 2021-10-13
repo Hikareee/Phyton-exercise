@@ -36,5 +36,5 @@ v = wind**0.16
 tav = temp*v
 #final result
 result = 35.74 + (0.6215*temp) - (35.75*v) + (0.4275*tav)
-resultf = "{:.2f}".format(result)
+resultf = "{:.3f}".format(result)
 print (resultf)

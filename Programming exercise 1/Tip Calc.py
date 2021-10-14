@@ -13,7 +13,7 @@ tip = eval(input("Enter tip amount (as a %): "))
 tipd = sub *(tip/100)
 tipf =  "{:.2f}".format(tipd)
 #calculate the total
-total = tip + sub
+total = tipd + sub
 #turn the float to 2 decimal format
 total = "{:.2f}".format(total)
 #print out all 

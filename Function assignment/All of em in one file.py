@@ -7,14 +7,18 @@ def convert_to_days():
     minutes = int(input("Enter number of minutes: "))
     #input seconds
     seconds = int(input("Enter number of seconds: "))
-    #calculate days
-    days = (hours/24) + ((minutes/60)/24) + ((((seconds/60)/60)/24))
-    #return the value of days
-    return days
-#store the value of days in d
-d = convert_to_days()
-#print it out
-print ("The number of days is:", d)
+    def get_days():
+        days = (hours/24) + ((minutes/60)/24) + ((((seconds/60)/60)/24))
+        #round to 4 digits
+        d = round(days,4)
+        #return the value of the rounded days
+        return d
+    #store the value of d
+    d = get_days()
+    #print out the number of days
+    print ("The number of days is: ", d)
+#run the function
+convert_to_days()
 # %%
 #declare a function "calc_weight_on_planet accepting 2 "
 def calc_weight_on_planet(woe,sgop = 23.1):
